@@ -1,4 +1,11 @@
 #!/bin/bash
+#SBATCH -C gpu
+#SBATCH -A nstaff_g
+#SBATCH -q debug_ss11
+#SBATCH --nodes=1
+#SBATCH --gpus-per-node=4
+#SBATCH --time=30
+#SBATCH -o slurm-build-%j.out
 
 # This script will download, patch, build, and install AWS-OFI-NCCL.
 # It will use the Perlmutter NCCL. NCCL tests can then be built in a container
@@ -6,6 +13,7 @@
 
 set -e
 
+module load libfabric/1.15.0.0
 module load cudatoolkit/11.7
 module load craype-accel-nvidia80
 
