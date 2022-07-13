@@ -16,6 +16,7 @@ set -e
 module load libfabric/1.15.0.0
 module load cudatoolkit/11.7
 module load craype-accel-nvidia80
+module unload darshan
 
 export NCCL_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/22.5/comm_libs/nccl
 export INSTALL_DIR=`pwd`/install
