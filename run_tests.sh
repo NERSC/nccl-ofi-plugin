@@ -28,6 +28,7 @@ export NCCL_CROSS_NIC=1
 #export OFI_NCCL_CUDA_FLUSH_ENABLE=1
 export NCCL_DEBUG=INFO
 export NCCL_SOCKET_IFNAME=hsn
+export NCCL_NET="AWS Libfabric"
 
 echo ========== BUILDING NCCL TESTS ==========
 if [ ! -e nccl-tests ]; then
