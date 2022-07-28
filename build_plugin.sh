@@ -31,11 +31,11 @@ export CXX=CC
 
 echo ========== BUILDING OFI PLUGIN ==========
 if [ ! -e aws-ofi-nccl ]; then
-    git clone https://github.com/aws/aws-ofi-nccl.git
+    git clone -b rel/nersc-1 https://github.com/jdinan/aws-ofi-nccl.git
     cd aws-ofi-nccl
-    git am --no-gpg-sign ../*.patch
+
     ./autogen.sh
-    ./configure --with-nccl=$NCCL_HOME --with-cuda=$CUDA_HOME --with-libfabric=$LIBFABRIC_HOME --prefix=$INSTALL_DIR
+    ./configure --with-nccl=$NCCL_HOME --with-cuda=$CUDA_HOME --with-libfabric=$LIBFABRIC_HOME --prefix=$INSTALL_DIR --with-gdrcopy=$GDRCOPY_HOME
     make -j $N install
     cd ..
 else
