@@ -12,7 +12,7 @@ module load libfabric/1.15.0.0
 module load cudatoolkit/11.7
 module load craype-accel-nvidia80
 
-export NCCL_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/22.5/comm_libs/nccl
+export NCCL_HOME=$PWD/install
 export N=10
 export CC=cc
 export CXX=CC
@@ -23,9 +23,7 @@ export CRAY_ACCEL_TARGET=nvidia80
 export NVCC_GENCODE="-gencode=arch=compute_80,code=sm_80"
 
 export LD_LIBRARY_PATH=$NCCL_HOME/lib:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=$PWD/install/lib:$LD_LIBRARY_PATH
 export NCCL_CROSS_NIC=1
-#export OFI_NCCL_CUDA_FLUSH_ENABLE=1
 export NCCL_DEBUG=INFO
 export NCCL_SOCKET_IFNAME=hsn
 export NCCL_NET="AWS Libfabric"

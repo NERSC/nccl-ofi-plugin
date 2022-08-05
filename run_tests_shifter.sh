@@ -14,7 +14,7 @@ if [ ! -e nccl-tests-shifter ]; then
     git clone https://github.com/NVIDIA/nccl-tests.git nccl-tests-shifter
     cd nccl-tests-shifter
     #git checkout 8274cb4 
-    shifter bash -c "make -j 10 MPI=1 MPI_HOME=/usr/local/mpi"
+    shifter bash -c "make -j 10 MPI=1 MPI_HOME=/usr/local/mpi NCCL_HOME=$PWD/install"
     cd ..
 else
     echo Skipping ... nccl-tests-shifter directory already exists
