@@ -41,7 +41,7 @@ fi
 
 echo ========== BUILDING OFI PLUGIN ==========
 if [ ! -e aws-ofi-nccl ]; then
-    git clone -b rel/nersc-1 https://github.com/jdinan/aws-ofi-nccl.git
+    git clone -b rel/nersc-2 https://github.com/jdinan/aws-ofi-nccl.git
     cd aws-ofi-nccl
 
     ./autogen.sh
