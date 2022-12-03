@@ -12,8 +12,9 @@
 
 set -e
 
-module load libfabric/1.15.0.0
-module load cudatoolkit/11.7
+module unload PrgEnv-nvidia
+module load PrgEnv-gnu
+module load cudatoolkit
 module load craype-accel-nvidia80
 module unload darshan
 
@@ -21,16 +22,18 @@ export INSTALL_DIR=`pwd`/install
 export NCCL_HOME=$INSTALL_DIR
 export LIBFABRIC_HOME=/opt/cray/libfabric/1.15.0.0
 export GDRCOPY_HOME=/usr
-export CRAY_ACCEL_TARGET=nvidia80
+
+export MPICH_GPU_SUPPORT_ENABLED=1
 export NVCC_GENCODE="-gencode=arch=compute_80,code=sm_80"
 
 export N=10
+export MPICC=CC
 export CC=cc
 export CXX=CC
 
 echo ========== BUILDING NCCL ==========
 if [ ! -e nccl ]; then
-    git clone --branch v2.13.4-1 https://github.com/NVIDIA/nccl.git
+    git clone --branch v2.15.5-1 https://github.com/NVIDIA/nccl.git
     cd nccl
     make -j $N src.build
     make PREFIX=$NCCL_HOME install
@@ -41,9 +44,8 @@ fi
 
 echo ========== BUILDING OFI PLUGIN ==========
 if [ ! -e aws-ofi-nccl ]; then
-    git clone -b rel/nersc-2 https://github.com/jdinan/aws-ofi-nccl.git
+    git clone -b rel/nersc-3 https://github.com/jdinan/aws-ofi-nccl.git
     cd aws-ofi-nccl
-
     ./autogen.sh
     ./configure --with-nccl=$NCCL_HOME --with-cuda=$CUDA_HOME --with-libfabric=$LIBFABRIC_HOME --prefix=$INSTALL_DIR --with-gdrcopy=$GDRCOPY_HOME
     make -j $N install
