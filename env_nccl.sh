@@ -1,6 +1,6 @@
-export INSTALL_DIR=`pwd`/install
-export LD_LIBRARY_PATH=$INSTALL_DIR/lib:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=$INSTALL_DIR/deps/lib:$LD_LIBRARY_PATH
+export NCCL_HOME=$(dirname "${BASH_SOURCE[0]}")/install
+export LD_LIBRARY_PATH=$NCCL_HOME/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$NCCL_HOME/deps/lib:$LD_LIBRARY_PATH
 
 export FI_CXI_DISABLE_HOST_REGISTER=1
 export NCCL_CROSS_NIC=1
@@ -15,4 +15,4 @@ export NCCL_NET="AWS Libfabric"
 export FI_MR_CACHE_MONITOR=memhooks
 
 # You may also need this
-#export LD_PRELOAD=$INSTALL_DIR/deps/lib/libcrypto.so.1.1:$INSTALL_DIR/deps/lib/libssl.so.1.1
+#export LD_PRELOAD=$NCCL_HOME/deps/lib/libcrypto.so.1.1:$NCCL_HOME/deps/lib/libssl.so.1.1
