@@ -20,6 +20,7 @@ else
     echo Skipping ... nccl-tests-shifter directory already exists
 fi
 
+echo ========== RUNNING NCCL TESTS ==========
 srun --mpi=pmi2 shifter --module gpu bash -c "
     source env_nccl.sh
     nccl-tests-shifter/build/all_reduce_perf -b 8 -e 4G -f 2
