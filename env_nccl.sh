@@ -15,4 +15,4 @@ export NCCL_NET="AWS Libfabric"
 export FI_MR_CACHE_MONITOR=memhooks
 
 # You may also need this
-#export LD_PRELOAD=$NCCL_HOME/deps/lib/libcrypto.so.1.1:$NCCL_HOME/deps/lib/libssl.so.1.1
+export LD_PRELOAD=$NCCL_HOME/deps/lib/libcrypto.so.1.1:$NCCL_HOME/deps/lib/libssl.so.1.1
