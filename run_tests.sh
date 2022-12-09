@@ -21,8 +21,5 @@ export NCCL_SOCKET_IFNAME=hsn
 export NCCL_NET="AWS Libfabric"
 export NCCL_NET_GDR_LEVEL=PHB
 
-# A short term workaround to some Linux kernel setting HPE says needs to be set but isn't.
-export FI_MR_CACHE_MONITOR=memhooks
-
 echo ========== RUNNING NCCL TESTS ==========
 srun nccl-tests/build/all_reduce_perf -b 8 -e 4G -f 2
