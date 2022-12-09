@@ -65,8 +65,8 @@ else
 fi
 
 echo ========== PREPARING DEPENDENCIES ==========
-mkdir -p install/deps/lib
-cp -P $(cat dependencies.txt) install/deps/lib/
+mkdir -p ${INSTALL_DIR}/deps/lib
+cp -P $(cat dependencies.txt) ${INSTALL_DIR}/deps/lib/
 
 echo
 echo ========== DONE ==========
