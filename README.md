@@ -1,10 +1,11 @@
 # nccl-ofi-plugin
 
-This package was modified from a zip file provided by Jin Dinan from NVIDIA at
-https://nersc.slack.com/archives/C02GTUU38DT/p1657219082324729
+This package is used to build NCCL with the OFI plugin for use at NERSC.
+The plugin is provided by AWS at https://github.com/aws/aws-ofi-nccl
+with modifications by Jim Dinan at NVIDIA.
 
 Build the plugin with
   > ./build_plugin.sh
 
 Run on SS11 gpu nodes with shifter:
-  > sbatch run_shifter.sh
+  > sbatch run_tests_shifter.sh
