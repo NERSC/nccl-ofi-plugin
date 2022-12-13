@@ -1,9 +1,12 @@
-export INSTALL_DIR=`pwd`/install
-export LD_LIBRARY_PATH=$INSTALL_DIR/lib:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=$INSTALL_DIR/deps/lib:$LD_LIBRARY_PATH
-export NCCL_CROSS_NIC=1
-export NCCL_DEBUG=INFO
-export NCCL_SOCKET_IFNAME=hsn
+# Source this script in your shifter container
+# to pull in NCCL with the OFI plugin
 
-# If you want it to fail when plugin load unsuccesful
+export NCCL_HOME=$(dirname "${BASH_SOURCE[0]}")/install
+export LD_LIBRARY_PATH=$NCCL_HOME/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$NCCL_HOME/deps/lib:$LD_LIBRARY_PATH
+
+export FI_CXI_DISABLE_HOST_REGISTER=1
+export NCCL_CROSS_NIC=1
+export NCCL_SOCKET_IFNAME=hsn
+export NCCL_NET_GDR_LEVEL=PHB
 export NCCL_NET="AWS Libfabric"
