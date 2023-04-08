@@ -1,5 +1,5 @@
 /opt/cray/libfabric/1.15.2.0/lib64/libfabric.so*
-/opt/cray/pe/mpich/8.1.22/gtl/lib/libmpi_gtl_cuda.so*
+/opt/cray/pe/mpich/8.1.24/gtl/lib/libmpi_gtl_cuda.so*
 /opt/cray/xpmem/default/lib64/libxpmem.so*
 /usr/lib64/libcxi.so*
 /usr/lib64/libcurl.so*

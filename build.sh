@@ -14,7 +14,6 @@ set -e
 
 module load PrgEnv-gnu
 module load cudatoolkit/11.7
-module load craype-accel-nvidia80
 module unload darshan
 
 export INSTALL_DIR=`pwd`/install
