@@ -1,5 +1,5 @@
 /opt/cray/libfabric/1.15.2.0/lib64/libfabric.so*
-/opt/cray/pe/mpich/8.1.24/gtl/lib/libmpi_gtl_cuda.so*
+/opt/cray/pe/mpich/8.1.25/gtl/lib/libmpi_gtl_cuda.so*
 /opt/cray/xpmem/default/lib64/libxpmem.so*
 /usr/lib64/libcxi.so*
 /usr/lib64/libcurl.so*
@@ -14,7 +14,7 @@
 /usr/lib64/libunistring.so*
 /usr/lib64/libkrb5.so*
 /usr/lib64/libk5crypto.so*
-/usr/lib64/libcom_err.so.2*
+/usr/lib64/libcom_err.so*
 /usr/lib64/libkrb5support.so*
 /lib64/libresolv.so*
 /usr/lib64/libsasl2.so*
