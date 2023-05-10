@@ -46,7 +46,7 @@ if [ ! -e aws-ofi-nccl ]; then
     git clone -b v1.6.0-hcopy https://github.com/jdinan/aws-ofi-nccl.git
     cd aws-ofi-nccl
     ./autogen.sh
-    ./configure --with-nccl=$NCCL_HOME --with-cuda=$CUDA_HOME --with-libfabric=$LIBFABRIC_HOME --prefix=$INSTALL_DIR --with-gdrcopy=$GDRCOPY_HOME
+    ./configure --with-nccl=$NCCL_HOME --with-cuda=$CUDA_HOME --with-libfabric=$LIBFABRIC_HOME --prefix=$INSTALL_DIR --with-gdrcopy=$GDRCOPY_HOME --disable-tests
     make -j $N install
     cd ..
 else
