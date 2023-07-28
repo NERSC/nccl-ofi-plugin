@@ -13,7 +13,7 @@
 set -e
 
 module load PrgEnv-gnu
-module load cudatoolkit/11.7
+module load cudatoolkit/12.0
 module unload darshan
 
 export INSTALL_DIR=`pwd`/install
@@ -32,7 +32,7 @@ export CXX=CC
 
 echo ========== BUILDING NCCL ==========
 if [ ! -e nccl ]; then
-    git clone --branch v2.17.1-1 https://github.com/NVIDIA/nccl.git
+    git clone --branch v2.18.3-1 https://github.com/NVIDIA/nccl.git
     cd nccl
     make -j $N PREFIX=$NCCL_HOME src.build
     make PREFIX=$NCCL_HOME install
