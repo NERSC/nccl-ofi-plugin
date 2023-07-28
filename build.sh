@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH -C gpu
-#SBATCH -A nstaff_g
-#SBATCH -q debug_ss11
+#SBATCH -A nstaff
+#SBATCH -q debug
 #SBATCH --nodes=1
 #SBATCH --gpus-per-node=4
 #SBATCH --time=30

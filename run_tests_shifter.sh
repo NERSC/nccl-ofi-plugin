@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH -A nstaff_g
+#SBATCH -A nstaff
 #SBATCH -C gpu
-#SBATCH -q regular_ss11
+#SBATCH -q regular
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=4
 #SBATCH --gpus-per-node=4
