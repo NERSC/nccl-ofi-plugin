@@ -26,9 +26,9 @@ export MPICH_GPU_SUPPORT_ENABLED=0
 export NVCC_GENCODE="-gencode=arch=compute_80,code=sm_80"
 
 export N=10
-export MPICC=cc
-export CC=cc
-export CXX=CC
+export MPICC=CC
+export CC=gcc #cc
+export CXX=g++ #CC
 
 echo ========== BUILDING NCCL ==========
 if [ ! -e nccl ]; then
@@ -57,7 +57,7 @@ echo ========== BUILDING NCCL TESTS ==========
 if [ ! -e nccl-tests ]; then
     git clone https://github.com/NVIDIA/nccl-tests.git
     cd nccl-tests
-    make -j $N MPI=1
+    make -j $N MPI=1 CC=cc CXX=CC
     cd ..
 else
     echo Skipping ... nccl-tests directory already exists
