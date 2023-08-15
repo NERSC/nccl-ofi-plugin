@@ -14,7 +14,6 @@ set -e
 
 module load PrgEnv-gnu
 module load cudatoolkit/12.0
-module unload darshan
 
 export INSTALL_DIR=`pwd`/install
 export NCCL_HOME=$INSTALL_DIR
