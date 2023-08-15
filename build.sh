@@ -15,7 +15,7 @@ set -e
 module load PrgEnv-gnu
 module load cudatoolkit/12.0
 
-export INSTALL_DIR=`pwd`/install
+export INSTALL_DIR=$(INSTALL_DIR:-`pwd`/install)
 export NCCL_HOME=$INSTALL_DIR
 export LIBFABRIC_HOME=/opt/cray/libfabric/1.15.2.0
 export GDRCOPY_HOME=/usr
