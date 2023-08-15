@@ -14,6 +14,7 @@ set -e
 
 module load PrgEnv-gnu
 module load cudatoolkit/12.0
+module unload craype-accel-nvidia80
 
 export INSTALL_DIR=$(INSTALL_DIR:-`pwd`/install)
 export NCCL_HOME=$INSTALL_DIR
@@ -21,11 +22,11 @@ export LIBFABRIC_HOME=/opt/cray/libfabric/1.15.2.0
 export GDRCOPY_HOME=/usr
 export MPI_HOME=$CRAY_MPICH_DIR
 
-#export MPICH_GPU_SUPPORT_ENABLED=1
+export MPICH_GPU_SUPPORT_ENABLED=0
 export NVCC_GENCODE="-gencode=arch=compute_80,code=sm_80"
 
 export N=10
-export MPICC=CC
+export MPICC=cc
 export CC=cc
 export CXX=CC
 
