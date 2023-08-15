@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH -C gpu
-#SBATCH -A nstaff_g
-#SBATCH -q debug_ss11
+#SBATCH -A nstaff
+#SBATCH -q debug
 #SBATCH --nodes=1
 #SBATCH --gpus-per-node=4
 #SBATCH --time=30
@@ -13,26 +13,26 @@
 set -e
 
 module load PrgEnv-gnu
-module load cudatoolkit/11.7
-module unload darshan
+module load cudatoolkit/12.0
+module unload craype-accel-nvidia80
 
-export INSTALL_DIR=`pwd`/install
+export INSTALL_DIR=$(INSTALL_DIR:-`pwd`/install)
 export NCCL_HOME=$INSTALL_DIR
 export LIBFABRIC_HOME=/opt/cray/libfabric/1.15.2.0
 export GDRCOPY_HOME=/usr
 export MPI_HOME=$CRAY_MPICH_DIR
 
-#export MPICH_GPU_SUPPORT_ENABLED=1
+export MPICH_GPU_SUPPORT_ENABLED=0
 export NVCC_GENCODE="-gencode=arch=compute_80,code=sm_80"
 
 export N=10
-export MPICC=CC
+export MPICC=cc
 export CC=cc
 export CXX=CC
 
 echo ========== BUILDING NCCL ==========
 if [ ! -e nccl ]; then
-    git clone --branch v2.17.1-1 https://github.com/NVIDIA/nccl.git
+    git clone --branch v2.18.3-1 https://github.com/NVIDIA/nccl.git
     cd nccl
     make -j $N PREFIX=$NCCL_HOME src.build
     make PREFIX=$NCCL_HOME install
@@ -46,7 +46,7 @@ if [ ! -e aws-ofi-nccl ]; then
     git clone -b v1.6.0-hcopy https://github.com/aws/aws-ofi-nccl.git
     cd aws-ofi-nccl
     ./autogen.sh
-    ./configure --with-nccl=$NCCL_HOME --with-cuda=$CUDA_HOME --with-libfabric=$LIBFABRIC_HOME --prefix=$INSTALL_DIR --with-gdrcopy=$GDRCOPY_HOME --disable-tests
+    ./configure --with-cuda=$CUDA_HOME --with-libfabric=$LIBFABRIC_HOME --prefix=$INSTALL_DIR --with-gdrcopy=$GDRCOPY_HOME --disable-tests
     make -j $N install
     cd ..
 else

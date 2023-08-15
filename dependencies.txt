@@ -19,6 +19,6 @@
 /lib64/libresolv.so*
 /usr/lib64/libsasl2.so*
 /usr/lib64/libkeyutils.so*
-/global/common/software/dasrepo/dmargala/sles15sp4/conda-cray-mpich-deps/lib64/libcrypto.so*
-/global/common/software/dasrepo/dmargala/sles15sp4/conda-cray-mpich-deps/lib64/libssh.so*
-/global/common/software/dasrepo/dmargala/sles15sp4/conda-cray-mpich-deps/lib64/libssl.so*
+/global/common/software/nersc/pm-2022q4/sw/evp-patch/lib64/libcrypto.so*
+/global/common/software/nersc/pm-2022q4/sw/evp-patch/lib64/libssh.so*
+/global/common/software/nersc/pm-2022q4/sw/evp-patch/lib64/libssl.so*
