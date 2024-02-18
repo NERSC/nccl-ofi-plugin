@@ -3,7 +3,7 @@
 /usr/lib64/libcxi.so*
 /usr/lib64/libcurl.so*
 /usr/lib64/libjson-c.so*
-/opt/cray/pe/gcc/11.2.0/snos/lib64/libatomic.so*
+/usr/lib64/libatomic.so.1
 /usr/lib64/libnghttp2.so*
 /usr/lib64/libidn2.so*
 /usr/lib64/libpsl.so*

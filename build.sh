@@ -13,7 +13,7 @@
 set -e
 
 module load PrgEnv-gnu
-module load cudatoolkit/12.0
+module load cudatoolkit/12.2
 module unload craype-accel-nvidia80
 
 export INSTALL_DIR=${INSTALL_DIR:-`pwd`/install}
@@ -32,7 +32,7 @@ export CXX=g++ #CC
 
 echo ========== BUILDING NCCL ==========
 if [ ! -e nccl ]; then
-    git clone --branch v2.18.3-1 https://github.com/NVIDIA/nccl.git
+    git clone --branch v2.19.4-1 https://github.com/NVIDIA/nccl.git
     cd nccl
     make -j $N PREFIX=$NCCL_HOME src.build
     make PREFIX=$NCCL_HOME install
