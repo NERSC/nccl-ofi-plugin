@@ -32,7 +32,7 @@ export CXX=CC
 
 echo ========== BUILDING NCCL ==========
 if [ ! -e nccl ]; then
-    git clone --branch v2.18.3-1 https://github.com/NVIDIA/nccl.git
+    git clone --branch v2.18.5-1 https://github.com/NVIDIA/nccl.git
     cd nccl
     make -j $N PREFIX=$NCCL_HOME src.build
     make PREFIX=$NCCL_HOME install
@@ -43,7 +43,7 @@ fi
 
 echo ========== BUILDING OFI PLUGIN ==========
 if [ ! -e aws-ofi-nccl ]; then
-    git clone -b v1.6.0-hcopy https://github.com/aws/aws-ofi-nccl.git
+    git clone -b v1.6.0 https://github.com/aws/aws-ofi-nccl.git
     cd aws-ofi-nccl
     ./autogen.sh
     ./configure --with-cuda=$CUDA_HOME --with-libfabric=$LIBFABRIC_HOME --prefix=$INSTALL_DIR --with-gdrcopy=$GDRCOPY_HOME --disable-tests
