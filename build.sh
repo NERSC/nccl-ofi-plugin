@@ -17,6 +17,7 @@ module load cudatoolkit/12.2
 module unload craype-accel-nvidia80
 
 export INSTALL_DIR=${INSTALL_DIR:-`pwd`/install}
+export PLUGIN_DIR=$INSTALL_DIR/plugin
 export NCCL_HOME=$INSTALL_DIR
 export LIBFABRIC_HOME=/opt/cray/libfabric/1.15.2.0
 export GDRCOPY_HOME=/usr
@@ -46,7 +47,7 @@ if [ ! -e aws-ofi-nccl ]; then
     git clone -b v1.6.0 https://github.com/aws/aws-ofi-nccl.git
     cd aws-ofi-nccl
     ./autogen.sh
-    ./configure --with-cuda=$CUDA_HOME --with-libfabric=$LIBFABRIC_HOME --prefix=$INSTALL_DIR --with-gdrcopy=$GDRCOPY_HOME --disable-tests
+    ./configure --with-cuda=$CUDA_HOME --with-libfabric=$LIBFABRIC_HOME --prefix=$PLUGIN_DIR --with-gdrcopy=$GDRCOPY_HOME --disable-tests
     make -j $N install
     cd ..
 else
@@ -64,8 +65,8 @@ else
 fi
 
 echo ========== PREPARING DEPENDENCIES ==========
-mkdir -p ${INSTALL_DIR}/deps/lib
-cp -P $(cat dependencies.txt) ${INSTALL_DIR}/deps/lib/
+mkdir -p ${PLUGIN_DIR}/deps/lib
+cp -P $(cat dependencies.txt) ${PLUGIN_DIR}/deps/lib/
 
 echo
 echo ========== DONE ==========
