@@ -8,12 +8,12 @@
 #SBATCH --time=10 
 #SBATCH -o slurm-test-%j.out
 
-module load cudatoolkit/12.0
+module load cudatoolkit/12.2
 
 export NCCL_HOME=$PWD/install
 export MPICH_GPU_SUPPORT_ENABLED=0
 
-export LD_LIBRARY_PATH=$NCCL_HOME/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$NCCL_HOME/lib:$NCCL_HOME/plugin/lib:$LD_LIBRARY_PATH
 export FI_CXI_DISABLE_HOST_REGISTER=1
 export FI_MR_CACHE_MONITOR=userfaultfd
 export NCCL_CROSS_NIC=1

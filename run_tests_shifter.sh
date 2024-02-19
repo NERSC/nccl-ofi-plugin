@@ -6,7 +6,7 @@
 #SBATCH --ntasks-per-node=4
 #SBATCH --gpus-per-node=4
 #SBATCH --time=10
-#SBATCH --image=nvcr.io/nvidia/pytorch:23.07-py3
+#SBATCH --image=nvcr.io/nvidia/pytorch:24.01-py3
 #SBATCH -o slurm-test-shifter-%j.out
 
 echo ========== BUILDING NCCL TESTS ==========
@@ -14,7 +14,7 @@ if [ ! -e nccl-tests-shifter ]; then
     git clone https://github.com/NVIDIA/nccl-tests.git nccl-tests-shifter
     cd nccl-tests-shifter
     #git checkout 8274cb4 
-    shifter bash -c "make -j 10 MPI=1 MPI_HOME=/usr/local/mpi NCCL_HOME=$PWD/install"
+    shifter bash -c "make -j 10 MPI=1 MPI_HOME=/usr/local/mpi"
     cd ..
 else
     echo Skipping ... nccl-tests-shifter directory already exists
