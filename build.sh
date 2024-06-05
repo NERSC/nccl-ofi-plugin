@@ -33,7 +33,7 @@ export CXX=g++ #CC
 
 echo ========== BUILDING NCCL ==========
 if [ ! -e nccl ]; then
-    git clone --branch v2.19.4-1 https://github.com/NVIDIA/nccl.git
+    git clone --branch v2.21.5-1 https://github.com/NVIDIA/nccl.git
     cd nccl
     make -j $N PREFIX=$NCCL_HOME src.build
     make PREFIX=$NCCL_HOME install
