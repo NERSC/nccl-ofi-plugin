@@ -1,4 +1,4 @@
-/opt/cray/libfabric/1.15.2.0/lib64/libfabric.so*
+/opt/cray/libfabric/1.20.1/lib64/libfabric.so*
 /opt/cray/pe/mpich/8.1.25/gtl/lib/libmpi_gtl_cuda.so*
 /opt/cray/xpmem/default/lib64/libxpmem.so*
 /usr/lib64/libcxi.so*
@@ -19,6 +19,7 @@
 /lib64/libresolv.so*
 /usr/lib64/libsasl2.so*
 /usr/lib64/libkeyutils.so*
-/global/common/software/dasrepo/dmargala/sles15sp4/conda-cray-mpich-deps/lib64/libcrypto.so*
-/global/common/software/dasrepo/dmargala/sles15sp4/conda-cray-mpich-deps/lib64/libssh.so*
-/global/common/software/dasrepo/dmargala/sles15sp4/conda-cray-mpich-deps/lib64/libssl.so*
+/global/common/software/nersc/pm-2022q4/sw/evp-patch/lib64/libcrypto.so*
+/global/common/software/nersc/pm-2022q4/sw/evp-patch/lib64/libssh.so*
+/global/common/software/nersc/pm-2022q4/sw/evp-patch/lib64/libssl.so*
+/usr/lib64/libgdrapi.so*

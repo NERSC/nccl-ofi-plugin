@@ -8,6 +8,7 @@
 #SBATCH --time=10 
 #SBATCH -o slurm-test-%j.out
 
+module load PrgEnv-gnu gcc/11.2.0
 module load cudatoolkit/11.7
 
 export NCCL_HOME=$PWD/install

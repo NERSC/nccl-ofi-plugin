@@ -12,13 +12,13 @@
 
 set -e
 
-module load PrgEnv-gnu
+module load PrgEnv-gnu gcc/11.2.0
 module load cudatoolkit/11.7
 module unload darshan
 
 export INSTALL_DIR=`pwd`/install
 export NCCL_HOME=$INSTALL_DIR
-export LIBFABRIC_HOME=/opt/cray/libfabric/1.15.2.0
+export LIBFABRIC_HOME=/opt/cray/libfabric/1.20.1
 export GDRCOPY_HOME=/usr
 export MPI_HOME=$CRAY_MPICH_DIR
 
