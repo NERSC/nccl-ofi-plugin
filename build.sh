@@ -19,7 +19,7 @@ module unload craype-accel-nvidia80
 export INSTALL_DIR=${INSTALL_DIR:-`pwd`/install}
 export PLUGIN_DIR=$INSTALL_DIR/plugin
 export NCCL_HOME=$INSTALL_DIR
-export LIBFABRIC_HOME=/opt/cray/libfabric/1.15.2.0
+export LIBFABRIC_HOME=/opt/cray/libfabric/1.20.1
 export GDRCOPY_HOME=/usr
 export MPI_HOME=$CRAY_MPICH_DIR
 
