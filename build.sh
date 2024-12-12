@@ -71,14 +71,6 @@ cp -P $(cat dependencies.txt) ${PLUGIN_DIR}/deps/lib/
 echo
 echo ========== DONE ==========
 echo
-echo "Warning: This is a pre-release build of NCCL, performance is"
-echo "         a work in progress. Please do not distribute."
-echo
 echo "NCCL is installed in $NCCL_HOME"
 echo "NCCL tests are installed in `pwd`/nccl-tests/build"
-echo
-echo "To run NCCL tests (e.g. on two nodes):"
-echo
-echo "  $ source env_nccl.sh"
-echo "  $ srun -n 8 nccl-tests/build/all_reduce_perf -b 8 -e 4G -f 2"
 echo
