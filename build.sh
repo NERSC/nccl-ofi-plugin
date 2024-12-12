@@ -64,7 +64,7 @@ else
     echo Skipping ... nccl-tests directory already exists
 fi
 
-echo ========== PREPARING DEPENDENCIES ==========
+echo ========== PREPARING DEPENDENCIES FOR SHIFTER TESTING ==========
 mkdir -p ${PLUGIN_DIR}/deps/lib
 cp -P $(cat dependencies.txt) ${PLUGIN_DIR}/deps/lib/
 
