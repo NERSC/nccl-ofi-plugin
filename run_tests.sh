@@ -8,7 +8,7 @@
 #SBATCH --time=10 
 #SBATCH -o slurm-test-%j.out
 
-module load cudatoolkit/12.2
+module load cudatoolkit/12.4
 
 export NCCL_HOME=$PWD/install
 export MPICH_GPU_SUPPORT_ENABLED=0
