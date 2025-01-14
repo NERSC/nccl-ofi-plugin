@@ -1,0 +1,515 @@
+========== RUNNING NCCL TESTS ==========
+# nThread 1 nGpus 1 minBytes 8 maxBytes 4294967296 step: 2(factor) warmup iters: 5 iters: 20 agg iters: 1 validation: 1 graph: 0
+#
+# Using devices
+#  Rank  0 Group  0 Pid 626823 on  nid001049 device  0 [0x03] NVIDIA A100-SXM4-40GB
+#  Rank  1 Group  0 Pid 626824 on  nid001049 device  1 [0x41] NVIDIA A100-SXM4-40GB
+#  Rank  2 Group  0 Pid 626826 on  nid001049 device  2 [0x82] NVIDIA A100-SXM4-40GB
+#  Rank  3 Group  0 Pid 626828 on  nid001049 device  3 [0xc1] NVIDIA A100-SXM4-40GB
+#  Rank  4 Group  0 Pid 1734311 on  nid001052 device  0 [0x03] NVIDIA A100-SXM4-40GB
+#  Rank  5 Group  0 Pid 1734312 on  nid001052 device  1 [0x41] NVIDIA A100-SXM4-40GB
+#  Rank  6 Group  0 Pid 1734314 on  nid001052 device  2 [0x82] NVIDIA A100-SXM4-40GB
+#  Rank  7 Group  0 Pid 1734316 on  nid001052 device  3 [0xc1] NVIDIA A100-SXM4-40GB
+nid001049:626823:626823 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid001049:626823:626823 [0] NCCL INFO Bootstrap : Using hsn0:10.250.0.161<0>
+nid001049:626823:626823 [0] NCCL INFO cudaDriverVersion 12040
+nid001049:626823:626823 [0] NCCL INFO NCCL version 2.23.4+cuda12.4
+nid001049:626828:626828 [3] NCCL INFO cudaDriverVersion 12040
+nid001049:626826:626826 [2] NCCL INFO cudaDriverVersion 12040
+nid001049:626824:626824 [1] NCCL INFO cudaDriverVersion 12040
+nid001049:626828:626828 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid001049:626828:626828 [3] NCCL INFO Bootstrap : Using hsn0:10.250.0.161<0>
+nid001049:626828:626828 [3] NCCL INFO NCCL version 2.23.4+cuda12.4
+nid001049:626826:626826 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid001049:626826:626826 [2] NCCL INFO Bootstrap : Using hsn0:10.250.0.161<0>
+nid001049:626826:626826 [2] NCCL INFO NCCL version 2.23.4+cuda12.4
+nid001049:626824:626824 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid001049:626824:626824 [1] NCCL INFO Bootstrap : Using hsn0:10.250.0.161<0>
+nid001049:626824:626824 [1] NCCL INFO NCCL version 2.23.4+cuda12.4
+nid001052:1734314:1734314 [2] NCCL INFO cudaDriverVersion 12040
+nid001052:1734316:1734316 [3] NCCL INFO cudaDriverVersion 12040
+nid001052:1734311:1734311 [0] NCCL INFO cudaDriverVersion 12040
+nid001052:1734311:1734311 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid001052:1734314:1734314 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid001052:1734316:1734316 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid001052:1734311:1734311 [0] NCCL INFO Bootstrap : Using hsn0:10.250.0.47<0>
+nid001052:1734314:1734314 [2] NCCL INFO Bootstrap : Using hsn0:10.250.0.47<0>
+nid001052:1734314:1734314 [2] NCCL INFO NCCL version 2.23.4+cuda12.4
+nid001052:1734316:1734316 [3] NCCL INFO Bootstrap : Using hsn0:10.250.0.47<0>
+nid001052:1734311:1734311 [0] NCCL INFO NCCL version 2.23.4+cuda12.4
+nid001052:1734316:1734316 [3] NCCL INFO NCCL version 2.23.4+cuda12.4
+nid001052:1734312:1734312 [1] NCCL INFO cudaDriverVersion 12040
+nid001052:1734312:1734312 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid001052:1734312:1734312 [1] NCCL INFO Bootstrap : Using hsn0:10.250.0.47<0>
+nid001052:1734312:1734312 [1] NCCL INFO NCCL version 2.23.4+cuda12.4
+nid001049:626828:626915 [3] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+nid001049:626828:626915 [3] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+nid001049:626828:626915 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+nid001049:626828:626915 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+nid001049:626828:626915 [3] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+nid001049:626828:626915 [3] NCCL INFO NET/OFI Selected Provider is cxi (found 8 nics)
+nid001049:626828:626915 [3] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so.
+nid001049:626828:626915 [3] NCCL INFO Using network AWS Libfabric
+nid001049:626823:626914 [0] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+nid001049:626823:626914 [0] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+nid001049:626823:626914 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+nid001049:626823:626914 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+nid001049:626823:626914 [0] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+nid001049:626826:626916 [2] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+nid001049:626826:626916 [2] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+nid001049:626826:626916 [2] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+nid001049:626826:626916 [2] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+nid001049:626826:626916 [2] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+nid001049:626824:626917 [1] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+nid001049:626824:626917 [1] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+nid001049:626824:626917 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+nid001049:626824:626917 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+nid001049:626824:626917 [1] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+nid001052:1734314:1734407 [2] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+nid001052:1734314:1734407 [2] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+nid001052:1734314:1734407 [2] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+nid001052:1734314:1734407 [2] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+nid001052:1734316:1734408 [3] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+nid001052:1734316:1734408 [3] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+nid001052:1734316:1734408 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+nid001052:1734316:1734408 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+nid001052:1734316:1734408 [3] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+nid001052:1734314:1734407 [2] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+nid001049:626823:626914 [0] NCCL INFO NET/OFI Selected Provider is cxi (found 8 nics)
+nid001049:626823:626914 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so.
+nid001049:626823:626914 [0] NCCL INFO Using network AWS Libfabric
+nid001049:626826:626916 [2] NCCL INFO NET/OFI Selected Provider is cxi (found 8 nics)
+nid001049:626826:626916 [2] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so.
+nid001049:626826:626916 [2] NCCL INFO Using network AWS Libfabric
+nid001049:626824:626917 [1] NCCL INFO NET/OFI Selected Provider is cxi (found 8 nics)
+nid001049:626824:626917 [1] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so.
+nid001049:626824:626917 [1] NCCL INFO Using network AWS Libfabric
+nid001052:1734316:1734408 [3] NCCL INFO NET/OFI Selected Provider is cxi (found 8 nics)
+nid001052:1734314:1734407 [2] NCCL INFO NET/OFI Selected Provider is cxi (found 8 nics)
+nid001052:1734314:1734407 [2] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so.
+nid001052:1734314:1734407 [2] NCCL INFO Using network AWS Libfabric
+nid001052:1734316:1734408 [3] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so.
+nid001052:1734316:1734408 [3] NCCL INFO Using network AWS Libfabric
+nid001052:1734312:1734409 [1] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+nid001052:1734312:1734409 [1] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+nid001052:1734312:1734409 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+nid001052:1734312:1734409 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+nid001052:1734312:1734409 [1] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+nid001052:1734311:1734406 [0] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+nid001052:1734311:1734406 [0] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+nid001052:1734311:1734406 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+nid001052:1734311:1734406 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+nid001052:1734311:1734406 [0] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+nid001052:1734312:1734409 [1] NCCL INFO NET/OFI Selected Provider is cxi (found 8 nics)
+nid001052:1734312:1734409 [1] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so.
+nid001052:1734312:1734409 [1] NCCL INFO Using network AWS Libfabric
+nid001052:1734311:1734406 [0] NCCL INFO NET/OFI Selected Provider is cxi (found 8 nics)
+nid001052:1734311:1734406 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so.
+nid001052:1734311:1734406 [0] NCCL INFO Using network AWS Libfabric
+nid001049:626828:626915 [3] NCCL INFO DMA-BUF is available on GPU device 3
+nid001049:626828:626915 [3] NCCL INFO ncclCommInitRank comm 0x119e610 rank 3 nranks 8 cudaDev 3 nvmlDev 3 busId c1000 commId 0x8d5a9a426d1a16ca - Init START
+nid001052:1734316:1734408 [3] NCCL INFO DMA-BUF is available on GPU device 3
+nid001052:1734316:1734408 [3] NCCL INFO ncclCommInitRank comm 0x119e600 rank 7 nranks 8 cudaDev 3 nvmlDev 3 busId c1000 commId 0x8d5a9a426d1a16ca - Init START
+nid001049:626823:626914 [0] NCCL INFO DMA-BUF is available on GPU device 0
+nid001049:626823:626914 [0] NCCL INFO ncclCommInitRank comm 0x119df70 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 3000 commId 0x8d5a9a426d1a16ca - Init START
+nid001049:626826:626916 [2] NCCL INFO DMA-BUF is available on GPU device 2
+nid001049:626826:626916 [2] NCCL INFO ncclCommInitRank comm 0x119e520 rank 2 nranks 8 cudaDev 2 nvmlDev 2 busId 82000 commId 0x8d5a9a426d1a16ca - Init START
+nid001049:626824:626917 [1] NCCL INFO DMA-BUF is available on GPU device 1
+nid001049:626824:626917 [1] NCCL INFO ncclCommInitRank comm 0x119e9f0 rank 1 nranks 8 cudaDev 1 nvmlDev 1 busId 41000 commId 0x8d5a9a426d1a16ca - Init START
+nid001052:1734314:1734407 [2] NCCL INFO DMA-BUF is available on GPU device 2
+nid001052:1734314:1734407 [2] NCCL INFO ncclCommInitRank comm 0x119e5f0 rank 6 nranks 8 cudaDev 2 nvmlDev 2 busId 82000 commId 0x8d5a9a426d1a16ca - Init START
+nid001052:1734312:1734409 [1] NCCL INFO DMA-BUF is available on GPU device 1
+nid001052:1734312:1734409 [1] NCCL INFO ncclCommInitRank comm 0x119e490 rank 5 nranks 8 cudaDev 1 nvmlDev 1 busId 41000 commId 0x8d5a9a426d1a16ca - Init START
+nid001052:1734311:1734406 [0] NCCL INFO DMA-BUF is available on GPU device 0
+nid001052:1734311:1734406 [0] NCCL INFO ncclCommInitRank comm 0x11a00b0 rank 4 nranks 8 cudaDev 0 nvmlDev 0 busId 3000 commId 0x8d5a9a426d1a16ca - Init START
+nid001052:1734311:1734406 [0] NCCL INFO Bootstrap timings total 0.001101 (create 0.000030, send 0.000187, recv 0.000466, ring 0.000213, delay 0.000001)
+nid001052:1734312:1734409 [1] NCCL INFO Bootstrap timings total 0.009683 (create 0.000041, send 0.000186, recv 0.000308, ring 0.000243, delay 0.000001)
+nid001052:1734314:1734407 [2] NCCL INFO Bootstrap timings total 0.039105 (create 0.000041, send 0.000269, recv 0.000415, ring 0.008964, delay 0.000001)
+nid001052:1734316:1734408 [3] NCCL INFO Bootstrap timings total 0.072985 (create 0.000038, send 0.000195, recv 0.016519, ring 0.038181, delay 0.000001)
+nid001049:626823:626914 [0] NCCL INFO Bootstrap timings total 0.057531 (create 0.000034, send 0.000127, recv 0.004149, ring 0.052329, delay 0.000001)
+nid001049:626824:626917 [1] NCCL INFO Bootstrap timings total 0.053545 (create 0.000036, send 0.000128, recv 0.000270, ring 0.052223, delay 0.000001)
+nid001049:626826:626916 [2] NCCL INFO Bootstrap timings total 0.053861 (create 0.000039, send 0.000135, recv 0.000156, ring 0.052237, delay 0.000001)
+nid001049:626828:626915 [3] NCCL INFO Bootstrap timings total 0.149587 (create 0.000041, send 0.000147, recv 0.148029, ring 0.000265, delay 0.000001)
+nid001049:626823:626914 [0] NCCL INFO Setting affinity for GPU 0 to ffff0000,00000000,ffff0000,00000000
+nid001049:626823:626914 [0] NCCL INFO NVLS multicast support is not available on dev 0
+nid001049:626823:626914 [0] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+nid001049:626826:626916 [2] NCCL INFO Setting affinity for GPU 2 to ffff0000,00000000,ffff0000
+nid001049:626826:626916 [2] NCCL INFO NVLS multicast support is not available on dev 2
+nid001049:626826:626916 [2] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+nid001049:626824:626917 [1] NCCL INFO Setting affinity for GPU 1 to ffff,00000000,0000ffff,00000000
+nid001049:626824:626917 [1] NCCL INFO NVLS multicast support is not available on dev 1
+nid001049:626824:626917 [1] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+nid001049:626828:626915 [3] NCCL INFO Setting affinity for GPU 3 to ffff,00000000,0000ffff
+nid001049:626828:626915 [3] NCCL INFO NVLS multicast support is not available on dev 3
+nid001052:1734311:1734406 [0] NCCL INFO Setting affinity for GPU 0 to ffff0000,00000000,ffff0000,00000000
+nid001049:626828:626915 [3] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+nid001052:1734311:1734406 [0] NCCL INFO NVLS multicast support is not available on dev 0
+nid001052:1734311:1734406 [0] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+nid001052:1734312:1734409 [1] NCCL INFO Setting affinity for GPU 1 to ffff,00000000,0000ffff,00000000
+nid001052:1734312:1734409 [1] NCCL INFO NVLS multicast support is not available on dev 1
+nid001052:1734312:1734409 [1] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+nid001052:1734314:1734407 [2] NCCL INFO Setting affinity for GPU 2 to ffff0000,00000000,ffff0000
+nid001052:1734314:1734407 [2] NCCL INFO NVLS multicast support is not available on dev 2
+nid001052:1734314:1734407 [2] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+nid001052:1734316:1734408 [3] NCCL INFO Setting affinity for GPU 3 to ffff,00000000,0000ffff
+nid001052:1734316:1734408 [3] NCCL INFO NVLS multicast support is not available on dev 3
+nid001052:1734316:1734408 [3] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+nid001049:626823:626914 [0] NCCL INFO comm 0x119df70 rank 0 nRanks 8 nNodes 2 localRanks 4 localRank 0 MNNVL 0
+nid001052:1734311:1734406 [0] NCCL INFO comm 0x11a00b0 rank 4 nRanks 8 nNodes 2 localRanks 4 localRank 0 MNNVL 0
+nid001049:626824:626917 [1] NCCL INFO comm 0x119e9f0 rank 1 nRanks 8 nNodes 2 localRanks 4 localRank 1 MNNVL 0
+nid001049:626826:626916 [2] NCCL INFO comm 0x119e520 rank 2 nRanks 8 nNodes 2 localRanks 4 localRank 2 MNNVL 0
+nid001052:1734312:1734409 [1] NCCL INFO comm 0x119e490 rank 5 nRanks 8 nNodes 2 localRanks 4 localRank 1 MNNVL 0
+nid001049:626828:626915 [3] NCCL INFO comm 0x119e610 rank 3 nRanks 8 nNodes 2 localRanks 4 localRank 3 MNNVL 0
+nid001049:626828:626915 [3] NCCL INFO Trees [0] 2/-1/-1->3->0 [1] 1/7/-1->3->-1 [2] -1/-1/-1->3->1 [3] 0/-1/-1->3->2 [4] 2/-1/-1->3->0 [5] 1/-1/-1->3->7 [6] -1/-1/-1->3->1 [7] 0/-1/-1->3->2
+nid001049:626828:626915 [3] NCCL INFO P2P Chunksize set to 131072
+nid001052:1734314:1734407 [2] NCCL INFO comm 0x119e5f0 rank 6 nRanks 8 nNodes 2 localRanks 4 localRank 2 MNNVL 0
+nid001049:626823:626914 [0] NCCL INFO Channel 00/08 : 0 3 2 1 7 4 5 6
+nid001049:626823:626914 [0] NCCL INFO Channel 01/08 : 0 1 2 4 7 6 5 3
+nid001049:626823:626914 [0] NCCL INFO Channel 02/08 : 0 5 6 4 7 2 3 1
+nid001049:626823:626914 [0] NCCL INFO Channel 03/08 : 0 3 6 7 5 4 1 2
+nid001049:626823:626914 [0] NCCL INFO Channel 04/08 : 0 3 2 1 7 4 5 6
+nid001049:626823:626914 [0] NCCL INFO Channel 05/08 : 0 1 2 4 7 6 5 3
+nid001049:626823:626914 [0] NCCL INFO Channel 06/08 : 0 5 6 4 7 2 3 1
+nid001049:626823:626914 [0] NCCL INFO Channel 07/08 : 0 3 6 7 5 4 1 2
+nid001052:1734316:1734408 [3] NCCL INFO comm 0x119e600 rank 7 nRanks 8 nNodes 2 localRanks 4 localRank 3 MNNVL 0
+nid001049:626824:626917 [1] NCCL INFO Trees [0] -1/-1/-1->1->2 [1] 0/-1/-1->1->3 [2] 3/-1/-1->1->0 [3] 2/5/-1->1->-1 [4] -1/-1/-1->1->2 [5] 0/-1/-1->1->3 [6] 3/-1/-1->1->0 [7] 2/-1/-1->1->5
+nid001049:626824:626917 [1] NCCL INFO P2P Chunksize set to 131072
+nid001052:1734314:1734407 [2] NCCL INFO Trees [0] 5/-1/-1->6->7 [1] -1/-1/-1->6->4 [2] 4/-1/-1->6->2 [3] 7/-1/-1->6->5 [4] 5/-1/-1->6->7 [5] -1/-1/-1->6->4 [6] 4/2/-1->6->-1 [7] 7/-1/-1->6->5
+nid001052:1734314:1734407 [2] NCCL INFO P2P Chunksize set to 131072
+nid001049:626826:626916 [2] NCCL INFO Trees [0] 1/-1/-1->2->3 [1] -1/-1/-1->2->0 [2] 0/6/-1->2->-1 [3] 3/-1/-1->2->1 [4] 1/-1/-1->2->3 [5] -1/-1/-1->2->0 [6] 0/-1/-1->2->6 [7] 3/-1/-1->2->1
+nid001049:626826:626916 [2] NCCL INFO P2P Chunksize set to 131072
+nid001052:1734312:1734409 [1] NCCL INFO Trees [0] -1/-1/-1->5->6 [1] 4/-1/-1->5->7 [2] 7/-1/-1->5->4 [3] 6/-1/-1->5->1 [4] -1/-1/-1->5->6 [5] 4/-1/-1->5->7 [6] 7/-1/-1->5->4 [7] 6/1/-1->5->-1
+nid001049:626823:626914 [0] NCCL INFO Trees [0] 3/4/-1->0->-1 [1] 2/-1/-1->0->1 [2] 1/-1/-1->0->2 [3] -1/-1/-1->0->3 [4] 3/-1/-1->0->4 [5] 2/-1/-1->0->1 [6] 1/-1/-1->0->2 [7] -1/-1/-1->0->3
+nid001049:626823:626914 [0] NCCL INFO P2P Chunksize set to 131072
+nid001052:1734311:1734406 [0] NCCL INFO Trees [0] 7/-1/-1->4->0 [1] 6/-1/-1->4->5 [2] 5/-1/-1->4->6 [3] -1/-1/-1->4->7 [4] 7/0/-1->4->-1 [5] 6/-1/-1->4->5 [6] 5/-1/-1->4->6 [7] -1/-1/-1->4->7
+nid001052:1734311:1734406 [0] NCCL INFO P2P Chunksize set to 131072
+nid001052:1734312:1734409 [1] NCCL INFO P2P Chunksize set to 131072
+nid001052:1734316:1734408 [3] NCCL INFO Trees [0] 6/-1/-1->7->4 [1] 5/-1/-1->7->3 [2] -1/-1/-1->7->5 [3] 4/-1/-1->7->6 [4] 6/-1/-1->7->4 [5] 5/3/-1->7->-1 [6] -1/-1/-1->7->5 [7] 4/-1/-1->7->6
+nid001052:1734316:1734408 [3] NCCL INFO P2P Chunksize set to 131072
+nid001052:1734311:1734419 [0] NCCL INFO [Proxy Service] Device 0 CPU core 49
+nid001052:1734314:1734422 [2] NCCL INFO [Proxy Service UDS] Device 2 CPU core 24
+nid001052:1734314:1734418 [2] NCCL INFO [Proxy Service] Device 2 CPU core 23
+nid001052:1734316:1734424 [3] NCCL INFO [Proxy Service UDS] Device 3 CPU core 65
+nid001052:1734316:1734420 [3] NCCL INFO [Proxy Service] Device 3 CPU core 8
+nid001052:1734311:1734423 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 57
+nid001052:1734312:1734421 [1] NCCL INFO [Proxy Service] Device 1 CPU core 43
+nid001052:1734312:1734425 [1] NCCL INFO [Proxy Service UDS] Device 1 CPU core 33
+nid001052:1734314:1734407 [2] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+nid001052:1734314:1734407 [2] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+nid001052:1734311:1734406 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+nid001052:1734311:1734406 [0] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+nid001052:1734316:1734408 [3] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+nid001052:1734316:1734408 [3] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+nid001052:1734312:1734409 [1] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+nid001052:1734312:1734409 [1] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+nid001052:1734311:1734406 [0] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+nid001052:1734311:1734406 [0] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+nid001052:1734311:1734406 [0] NCCL INFO ncclCommInitRank comm 0x11a00b0 rank 4 nranks 8 cudaDev 0 nvmlDev 0 busId 3000 commId 0x8d5a9a426d1a16ca - Init COMPLETE
+nid001052:1734311:1734406 [0] NCCL INFO Init timings - ncclCommInitRank: rank 4 nranks 8 total 0.56 (kernels 0.18, alloc 0.20, bootstrap 0.00, allgathers 0.00, topo 0.14, graphs 0.02, connections 0.01, rest 0.00)
+nid001052:1734312:1734409 [1] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+nid001052:1734312:1734409 [1] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+nid001052:1734312:1734409 [1] NCCL INFO ncclCommInitRank comm 0x119e490 rank 5 nranks 8 cudaDev 1 nvmlDev 1 busId 41000 commId 0x8d5a9a426d1a16ca - Init COMPLETE
+nid001052:1734312:1734409 [1] NCCL INFO Init timings - ncclCommInitRank: rank 5 nranks 8 total 0.55 (kernels 0.17, alloc 0.19, bootstrap 0.01, allgathers 0.00, topo 0.14, graphs 0.02, connections 0.01, rest 0.00)
+nid001052:1734316:1734408 [3] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+nid001052:1734316:1734408 [3] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+nid001052:1734316:1734408 [3] NCCL INFO ncclCommInitRank comm 0x119e600 rank 7 nranks 8 cudaDev 3 nvmlDev 3 busId c1000 commId 0x8d5a9a426d1a16ca - Init COMPLETE
+nid001052:1734316:1734408 [3] NCCL INFO Init timings - ncclCommInitRank: rank 7 nranks 8 total 0.56 (kernels 0.13, alloc 0.17, bootstrap 0.07, allgathers 0.00, topo 0.15, graphs 0.02, connections 0.01, rest 0.00)
+nid001052:1734314:1734407 [2] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+nid001052:1734314:1734407 [2] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+nid001052:1734314:1734407 [2] NCCL INFO ncclCommInitRank comm 0x119e5f0 rank 6 nranks 8 cudaDev 2 nvmlDev 2 busId 82000 commId 0x8d5a9a426d1a16ca - Init COMPLETE
+nid001052:1734314:1734407 [2] NCCL INFO Init timings - ncclCommInitRank: rank 6 nranks 8 total 0.56 (kernels 0.14, alloc 0.20, bootstrap 0.04, allgathers 0.00, topo 0.14, graphs 0.02, connections 0.01, rest 0.00)
+nid001049:626824:626929 [1] NCCL INFO [Proxy Service] Device 1 CPU core 34
+nid001049:626826:626927 [2] NCCL INFO [Proxy Service] Device 2 CPU core 87
+nid001049:626826:626930 [2] NCCL INFO [Proxy Service UDS] Device 2 CPU core 94
+nid001049:626824:626931 [1] NCCL INFO [Proxy Service UDS] Device 1 CPU core 40
+nid001049:626823:626932 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 113
+nid001049:626823:626928 [0] NCCL INFO [Proxy Service] Device 0 CPU core 56
+nid001049:626828:626926 [3] NCCL INFO [Proxy Service] Device 3 CPU core 75
+nid001049:626828:626933 [3] NCCL INFO [Proxy Service UDS] Device 3 CPU core 15
+nid001049:626826:626916 [2] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+nid001049:626826:626916 [2] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+nid001049:626824:626917 [1] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+nid001049:626824:626917 [1] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+nid001049:626828:626915 [3] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+nid001049:626828:626915 [3] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+nid001049:626823:626914 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+nid001049:626823:626914 [0] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+nid001049:626823:626914 [0] NCCL INFO CC Off, Multi-GPU CC Off, workFifoBytes 1048576
+nid001049:626823:626914 [0] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+nid001049:626823:626914 [0] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+nid001049:626823:626914 [0] NCCL INFO ncclCommInitRank comm 0x119df70 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 3000 commId 0x8d5a9a426d1a16ca - Init COMPLETE
+nid001049:626823:626914 [0] NCCL INFO Init timings - ncclCommInitRank: rank 0 nranks 8 total 0.63 (kernels 0.17, alloc 0.22, bootstrap 0.06, allgathers 0.00, topo 0.14, graphs 0.02, connections 0.02, rest 0.00)
+nid001049:626824:626917 [1] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+nid001049:626824:626917 [1] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+nid001049:626824:626917 [1] NCCL INFO ncclCommInitRank comm 0x119e9f0 rank 1 nranks 8 cudaDev 1 nvmlDev 1 busId 41000 commId 0x8d5a9a426d1a16ca - Init COMPLETE
+nid001049:626824:626917 [1] NCCL INFO Init timings - ncclCommInitRank: rank 1 nranks 8 total 0.61 (kernels 0.15, alloc 0.22, bootstrap 0.05, allgathers 0.00, topo 0.14, graphs 0.02, connections 0.01, rest 0.00)
+nid001049:626826:626916 [2] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+nid001049:626826:626916 [2] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+nid001049:626826:626916 [2] NCCL INFO ncclCommInitRank comm 0x119e520 rank 2 nranks 8 cudaDev 2 nvmlDev 2 busId 82000 commId 0x8d5a9a426d1a16ca - Init COMPLETE
+nid001049:626826:626916 [2] NCCL INFO Init timings - ncclCommInitRank: rank 2 nranks 8 total 0.61 (kernels 0.15, alloc 0.22, bootstrap 0.05, allgathers 0.00, topo 0.14, graphs 0.02, connections 0.01, rest 0.00)
+nid001049:626828:626915 [3] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+nid001049:626828:626915 [3] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+nid001049:626828:626915 [3] NCCL INFO ncclCommInitRank comm 0x119e610 rank 3 nranks 8 cudaDev 3 nvmlDev 3 busId c1000 commId 0x8d5a9a426d1a16ca - Init COMPLETE
+nid001049:626828:626915 [3] NCCL INFO Init timings - ncclCommInitRank: rank 3 nranks 8 total 0.61 (kernels 0.10, alloc 0.18, bootstrap 0.15, allgathers 0.00, topo 0.14, graphs 0.02, connections 0.01, rest 0.00)
+#
+#                                                              out-of-place                       in-place          
+#       size         count      type   redop    root     time   algbw   busbw #wrong     time   algbw   busbw #wrong
+#        (B)    (elements)                               (us)  (GB/s)  (GB/s)            (us)  (GB/s)  (GB/s)       
+nid001049:626823:626937 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+nid001049:626823:626937 [0] NCCL INFO Channel 05/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+nid001049:626824:626935 [1] NCCL INFO Channel 01/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+nid001049:626824:626935 [1] NCCL INFO Channel 03/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+nid001049:626824:626935 [1] NCCL INFO Channel 05/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+nid001049:626826:626936 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+nid001049:626824:626935 [1] NCCL INFO Channel 07/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+nid001049:626826:626936 [2] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+nid001049:626823:626937 [0] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+nid001049:626824:626935 [1] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+nid001049:626826:626936 [2] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+nid001049:626828:626934 [3] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+nid001049:626826:626938 [2] NCCL INFO [Proxy Progress] Device 2 CPU core 93
+nid001049:626826:626936 [2] NCCL INFO Channel 01/0 : 2[2] -> 4[0] [send] via NET/AWS Libfabric/3/GDRDMA
+nid001049:626824:626939 [1] NCCL INFO [Proxy Progress] Device 1 CPU core 40
+nid001049:626826:626936 [2] NCCL INFO Channel 05/0 : 2[2] -> 4[0] [send] via NET/AWS Libfabric/3/GDRDMA
+nid001049:626828:626940 [3] NCCL INFO [Proxy Progress] Device 3 CPU core 79
+nid001049:626828:626934 [3] NCCL INFO Channel 03/0 : 3[3] -> 6[2] [send] via NET/AWS Libfabric/1/GDRDMA
+nid001049:626828:626934 [3] NCCL INFO Channel 07/0 : 3[3] -> 6[2] [send] via NET/AWS Libfabric/1/GDRDMA
+nid001049:626823:626941 [0] NCCL INFO [Proxy Progress] Device 0 CPU core 127
+nid001052:1734311:1734426 [0] NCCL INFO Channel 00/0 : 4[0] -> 5[1] via P2P/CUMEM/read
+nid001052:1734311:1734426 [0] NCCL INFO Channel 04/0 : 4[0] -> 5[1] via P2P/CUMEM/read
+nid001052:1734312:1734427 [1] NCCL INFO Channel 00/0 : 5[1] -> 6[2] via P2P/CUMEM/read
+nid001052:1734312:1734427 [1] NCCL INFO Channel 02/0 : 5[1] -> 6[2] via P2P/CUMEM/read
+nid001052:1734312:1734427 [1] NCCL INFO Channel 04/0 : 5[1] -> 6[2] via P2P/CUMEM/read
+nid001052:1734314:1734428 [2] NCCL INFO Channel 03/0 : 6[2] -> 7[3] via P2P/CUMEM/read
+nid001052:1734312:1734427 [1] NCCL INFO Channel 06/0 : 5[1] -> 6[2] via P2P/CUMEM/read
+nid001052:1734314:1734428 [2] NCCL INFO Channel 07/0 : 6[2] -> 7[3] via P2P/CUMEM/read
+nid001052:1734311:1734426 [0] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+nid001052:1734312:1734427 [1] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+nid001052:1734314:1734428 [2] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+nid001052:1734316:1734429 [3] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+nid001052:1734312:1734430 [1] NCCL INFO [Proxy Progress] Device 1 CPU core 108
+nid001052:1734314:1734431 [2] NCCL INFO [Proxy Progress] Device 2 CPU core 93
+nid001052:1734314:1734428 [2] NCCL INFO Channel 00/0 : 6[2] -> 0[0] [send] via NET/AWS Libfabric/5
+nid001052:1734314:1734428 [2] NCCL INFO Channel 04/0 : 6[2] -> 0[0] [send] via NET/AWS Libfabric/5
+nid001052:1734311:1734433 [0] NCCL INFO [Proxy Progress] Device 0 CPU core 121
+nid001052:1734316:1734432 [3] NCCL INFO [Proxy Progress] Device 3 CPU core 13
+nid001052:1734316:1734429 [3] NCCL INFO Channel 02/0 : 7[3] -> 2[2] [send] via NET/AWS Libfabric/7
+nid001052:1734316:1734429 [3] NCCL INFO Channel 06/0 : 7[3] -> 2[2] [send] via NET/AWS Libfabric/7
+nid001052:1734312:1734427 [1] NCCL INFO Channel 02/0 : 0[0] -> 5[1] [receive] via NET/AWS Libfabric/7
+nid001052:1734312:1734427 [1] NCCL INFO Channel 06/0 : 0[0] -> 5[1] [receive] via NET/AWS Libfabric/7
+nid001052:1734311:1734426 [0] NCCL INFO Channel 01/0 : 2[2] -> 4[0] [receive] via NET/AWS Libfabric/3
+nid001052:1734311:1734426 [0] NCCL INFO Channel 05/0 : 2[2] -> 4[0] [receive] via NET/AWS Libfabric/3
+nid001052:1734311:1734426 [0] NCCL INFO Channel 01/0 : 4[0] -> 7[3] via P2P/CUMEM/read
+nid001052:1734311:1734426 [0] NCCL INFO Channel 02/0 : 4[0] -> 7[3] via P2P/CUMEM/read
+nid001052:1734311:1734426 [0] NCCL INFO Channel 05/0 : 4[0] -> 7[3] via P2P/CUMEM/read
+nid001052:1734311:1734426 [0] NCCL INFO Channel 06/0 : 4[0] -> 7[3] via P2P/CUMEM/read
+nid001049:626824:626935 [1] NCCL INFO Channel 03/0 : 4[0] -> 1[1] [receive] via NET/AWS Libfabric/5/GDRDMA
+nid001049:626824:626935 [1] NCCL INFO Channel 07/0 : 4[0] -> 1[1] [receive] via NET/AWS Libfabric/5/GDRDMA
+nid001049:626823:626937 [0] NCCL INFO Channel 00/0 : 6[2] -> 0[0] [receive] via NET/AWS Libfabric/7/GDRDMA
+nid001049:626823:626937 [0] NCCL INFO Channel 04/0 : 6[2] -> 0[0] [receive] via NET/AWS Libfabric/7/GDRDMA
+nid001049:626823:626937 [0] NCCL INFO Channel 00/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+nid001049:626823:626937 [0] NCCL INFO Channel 03/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+nid001049:626823:626937 [0] NCCL INFO Channel 04/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+nid001049:626823:626937 [0] NCCL INFO Channel 07/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+nid001049:626823:626937 [0] NCCL INFO Channel 02/0 : 0[0] -> 5[1] [send] via NET/AWS Libfabric/7/GDRDMA
+nid001049:626823:626937 [0] NCCL INFO Channel 06/0 : 0[0] -> 5[1] [send] via NET/AWS Libfabric/7/GDRDMA
+nid001049:626824:626935 [1] NCCL INFO Channel 00/0 : 1[1] -> 7[3] [send] via NET/AWS Libfabric/5/GDRDMA
+nid001049:626824:626935 [1] NCCL INFO Channel 04/0 : 1[1] -> 7[3] [send] via NET/AWS Libfabric/5/GDRDMA
+nid001049:626826:626936 [2] NCCL INFO Channel 02/0 : 7[3] -> 2[2] [receive] via NET/AWS Libfabric/3/GDRDMA
+nid001049:626828:626934 [3] NCCL INFO Channel 01/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+nid001049:626826:626936 [2] NCCL INFO Channel 06/0 : 7[3] -> 2[2] [receive] via NET/AWS Libfabric/3/GDRDMA
+nid001049:626828:626934 [3] NCCL INFO Channel 05/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+nid001049:626826:626936 [2] NCCL INFO Channel 03/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+nid001049:626826:626936 [2] NCCL INFO Channel 07/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+nid001049:626826:626936 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+nid001049:626826:626936 [2] NCCL INFO Channel 04/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+nid001049:626828:626934 [3] NCCL INFO Channel 01/0 : 5[1] -> 3[3] [receive] via NET/AWS Libfabric/1/GDRDMA
+nid001049:626828:626934 [3] NCCL INFO Channel 05/0 : 5[1] -> 3[3] [receive] via NET/AWS Libfabric/1/GDRDMA
+nid001049:626828:626934 [3] NCCL INFO Channel 02/0 : 3[3] -> 1[1] via P2P/CUMEM/read
+nid001049:626828:626934 [3] NCCL INFO Channel 06/0 : 3[3] -> 1[1] via P2P/CUMEM/read
+nid001049:626828:626934 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+nid001049:626828:626934 [3] NCCL INFO Channel 04/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+nid001049:626824:626935 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+nid001049:626824:626935 [1] NCCL INFO Channel 06/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+nid001052:1734311:1734426 [0] NCCL INFO Channel 03/0 : 4[0] -> 1[1] [send] via NET/AWS Libfabric/1
+nid001052:1734311:1734426 [0] NCCL INFO Channel 07/0 : 4[0] -> 1[1] [send] via NET/AWS Libfabric/1
+nid001052:1734312:1734427 [1] NCCL INFO Channel 01/0 : 5[1] -> 3[3] [send] via NET/AWS Libfabric/3
+nid001052:1734312:1734427 [1] NCCL INFO Channel 05/0 : 5[1] -> 3[3] [send] via NET/AWS Libfabric/3
+nid001052:1734314:1734428 [2] NCCL INFO Channel 03/0 : 3[3] -> 6[2] [receive] via NET/AWS Libfabric/1
+nid001052:1734314:1734428 [2] NCCL INFO Channel 07/0 : 3[3] -> 6[2] [receive] via NET/AWS Libfabric/1
+nid001052:1734314:1734428 [2] NCCL INFO Channel 02/0 : 6[2] -> 4[0] via P2P/CUMEM/read
+nid001052:1734314:1734428 [2] NCCL INFO Channel 06/0 : 6[2] -> 4[0] via P2P/CUMEM/read
+nid001052:1734316:1734429 [3] NCCL INFO Channel 00/0 : 7[3] -> 4[0] via P2P/CUMEM/read
+nid001052:1734316:1734429 [3] NCCL INFO Channel 04/0 : 7[3] -> 4[0] via P2P/CUMEM/read
+nid001052:1734314:1734428 [2] NCCL INFO Channel 01/0 : 6[2] -> 5[1] via P2P/CUMEM/read
+nid001052:1734314:1734428 [2] NCCL INFO Channel 05/0 : 6[2] -> 5[1] via P2P/CUMEM/read
+nid001052:1734316:1734429 [3] NCCL INFO Channel 00/0 : 1[1] -> 7[3] [receive] via NET/AWS Libfabric/5
+nid001052:1734316:1734429 [3] NCCL INFO Channel 04/0 : 1[1] -> 7[3] [receive] via NET/AWS Libfabric/5
+nid001052:1734316:1734429 [3] NCCL INFO Channel 03/0 : 7[3] -> 5[1] via P2P/CUMEM/read
+nid001052:1734316:1734429 [3] NCCL INFO Channel 07/0 : 7[3] -> 5[1] via P2P/CUMEM/read
+nid001052:1734316:1734429 [3] NCCL INFO Channel 01/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+nid001052:1734316:1734429 [3] NCCL INFO Channel 05/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+nid001052:1734312:1734427 [1] NCCL INFO Channel 03/0 : 5[1] -> 4[0] via P2P/CUMEM/read
+nid001052:1734312:1734427 [1] NCCL INFO Channel 07/0 : 5[1] -> 4[0] via P2P/CUMEM/read
+nid001049:626828:626934 [3] NCCL INFO Connected all rings
+nid001052:1734311:1734426 [0] NCCL INFO Connected all rings
+nid001052:1734312:1734427 [1] NCCL INFO Connected all rings
+nid001052:1734314:1734428 [2] NCCL INFO Connected all rings
+nid001049:626823:626937 [0] NCCL INFO Connected all rings
+nid001052:1734316:1734429 [3] NCCL INFO Connected all rings
+nid001049:626826:626936 [2] NCCL INFO Connected all rings
+nid001049:626824:626935 [1] NCCL INFO Connected all rings
+nid001049:626823:626961 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+nid001052:1734311:1734436 [0] NCCL INFO Channel 01/0 : 4[0] -> 5[1] via P2P/CUMEM/read
+nid001052:1734311:1734436 [0] NCCL INFO Channel 02/0 : 4[0] -> 5[1] via P2P/CUMEM/read
+nid001049:626823:626961 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+nid001052:1734311:1734436 [0] NCCL INFO Channel 05/0 : 4[0] -> 5[1] via P2P/CUMEM/read
+nid001052:1734314:1734434 [2] NCCL INFO Channel 00/0 : 6[2] -> 7[3] via P2P/CUMEM/read
+nid001049:626826:626964 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+nid001052:1734311:1734436 [0] NCCL INFO Channel 06/0 : 4[0] -> 5[1] via P2P/CUMEM/read
+nid001049:626824:626962 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+nid001052:1734314:1734434 [2] NCCL INFO Channel 04/0 : 6[2] -> 7[3] via P2P/CUMEM/read
+nid001049:626826:626964 [2] NCCL INFO Channel 03/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+nid001052:1734312:1734435 [1] NCCL INFO Channel 03/0 : 5[1] -> 6[2] via P2P/CUMEM/read
+nid001049:626824:626962 [1] NCCL INFO Channel 04/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+nid001049:626826:626964 [2] NCCL INFO Channel 04/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+nid001052:1734312:1734435 [1] NCCL INFO Channel 07/0 : 5[1] -> 6[2] via P2P/CUMEM/read
+nid001049:626826:626964 [2] NCCL INFO Channel 07/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+nid001049:626823:626961 [0] NCCL INFO Channel 01/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+nid001052:1734311:1734436 [0] NCCL INFO Channel 01/0 : 4[0] -> 6[2] via P2P/CUMEM/read
+nid001049:626823:626961 [0] NCCL INFO Channel 02/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+nid001052:1734312:1734435 [1] NCCL INFO Channel 01/0 : 5[1] -> 7[3] via P2P/CUMEM/read
+nid001049:626824:626962 [1] NCCL INFO Channel 01/0 : 1[1] -> 3[3] via P2P/CUMEM/read
+nid001052:1734311:1734436 [0] NCCL INFO Channel 02/0 : 4[0] -> 6[2] via P2P/CUMEM/read
+nid001049:626823:626961 [0] NCCL INFO Channel 05/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+nid001049:626824:626962 [1] NCCL INFO Channel 02/0 : 1[1] -> 3[3] via P2P/CUMEM/read
+nid001052:1734312:1734435 [1] NCCL INFO Channel 02/0 : 5[1] -> 7[3] via P2P/CUMEM/read
+nid001052:1734311:1734436 [0] NCCL INFO Channel 05/0 : 4[0] -> 6[2] via P2P/CUMEM/read
+nid001049:626823:626961 [0] NCCL INFO Channel 06/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+nid001049:626824:626962 [1] NCCL INFO Channel 05/0 : 1[1] -> 3[3] via P2P/CUMEM/read
+nid001052:1734311:1734436 [0] NCCL INFO Channel 06/0 : 4[0] -> 6[2] via P2P/CUMEM/read
+nid001052:1734312:1734435 [1] NCCL INFO Channel 05/0 : 5[1] -> 7[3] via P2P/CUMEM/read
+nid001049:626824:626962 [1] NCCL INFO Channel 06/0 : 1[1] -> 3[3] via P2P/CUMEM/read
+nid001052:1734312:1734435 [1] NCCL INFO Channel 06/0 : 5[1] -> 7[3] via P2P/CUMEM/read
+nid001052:1734311:1734436 [0] NCCL INFO Channel 00/0 : 4[0] -> 7[3] via P2P/CUMEM/read
+nid001052:1734311:1734436 [0] NCCL INFO Channel 03/0 : 4[0] -> 7[3] via P2P/CUMEM/read
+nid001049:626824:626962 [1] NCCL INFO Channel 03/0 : 5[1] -> 1[1] [receive] via NET/AWS Libfabric/5/GDRDMA
+nid001049:626828:626963 [3] NCCL INFO Channel 01/0 : 7[3] -> 3[3] [receive] via NET/AWS Libfabric/1/GDRDMA
+nid001049:626823:626961 [0] NCCL INFO Channel 00/0 : 4[0] -> 0[0] [receive] via NET/AWS Libfabric/7/GDRDMA
+nid001049:626826:626964 [2] NCCL INFO Channel 02/0 : 6[2] -> 2[2] [receive] via NET/AWS Libfabric/3/GDRDMA
+nid001049:626824:626962 [1] NCCL INFO Channel 07/0 : 5[1] -> 1[1] [receive] via NET/AWS Libfabric/5/GDRDMA
+nid001049:626828:626963 [3] NCCL INFO Channel 05/0 : 7[3] -> 3[3] [receive] via NET/AWS Libfabric/1/GDRDMA
+nid001052:1734311:1734436 [0] NCCL INFO Channel 04/0 : 4[0] -> 7[3] via P2P/CUMEM/read
+nid001049:626823:626961 [0] NCCL INFO Channel 04/0 : 4[0] -> 0[0] [receive] via NET/AWS Libfabric/7/GDRDMA
+nid001049:626826:626964 [2] NCCL INFO Channel 06/0 : 6[2] -> 2[2] [receive] via NET/AWS Libfabric/3/GDRDMA
+nid001049:626824:626962 [1] NCCL INFO Channel 03/0 : 1[1] -> 5[1] [send] via NET/AWS Libfabric/5/GDRDMA
+nid001049:626828:626963 [3] NCCL INFO Channel 01/0 : 3[3] -> 7[3] [send] via NET/AWS Libfabric/1/GDRDMA
+nid001049:626823:626961 [0] NCCL INFO Channel 00/0 : 0[0] -> 4[0] [send] via NET/AWS Libfabric/7/GDRDMA
+nid001049:626826:626964 [2] NCCL INFO Channel 02/0 : 2[2] -> 6[2] [send] via NET/AWS Libfabric/3/GDRDMA
+nid001049:626824:626962 [1] NCCL INFO Channel 07/0 : 1[1] -> 5[1] [send] via NET/AWS Libfabric/5/GDRDMA
+nid001049:626828:626963 [3] NCCL INFO Channel 05/0 : 3[3] -> 7[3] [send] via NET/AWS Libfabric/1/GDRDMA
+nid001052:1734311:1734436 [0] NCCL INFO Channel 07/0 : 4[0] -> 7[3] via P2P/CUMEM/read
+nid001049:626823:626961 [0] NCCL INFO Channel 04/0 : 0[0] -> 4[0] [send] via NET/AWS Libfabric/7/GDRDMA
+nid001049:626826:626964 [2] NCCL INFO Channel 06/0 : 2[2] -> 6[2] [send] via NET/AWS Libfabric/3/GDRDMA
+nid001052:1734314:1734434 [2] NCCL INFO Channel 02/0 : 2[2] -> 6[2] [receive] via NET/AWS Libfabric/3/GDRDMA
+nid001052:1734314:1734434 [2] NCCL INFO Channel 06/0 : 2[2] -> 6[2] [receive] via NET/AWS Libfabric/3/GDRDMA
+nid001052:1734314:1734434 [2] NCCL INFO Channel 02/0 : 6[2] -> 2[2] [send] via NET/AWS Libfabric/3/GDRDMA
+nid001052:1734314:1734434 [2] NCCL INFO Channel 06/0 : 6[2] -> 2[2] [send] via NET/AWS Libfabric/3/GDRDMA
+nid001049:626826:626964 [2] NCCL INFO Channel 01/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+nid001052:1734314:1734434 [2] NCCL INFO Channel 01/0 : 6[2] -> 4[0] via P2P/CUMEM/read
+nid001049:626826:626964 [2] NCCL INFO Channel 02/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+nid001052:1734314:1734434 [2] NCCL INFO Channel 05/0 : 6[2] -> 4[0] via P2P/CUMEM/read
+nid001049:626826:626964 [2] NCCL INFO Channel 05/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+nid001049:626826:626964 [2] NCCL INFO Channel 06/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+nid001052:1734311:1734436 [0] NCCL INFO Channel 00/0 : 0[0] -> 4[0] [receive] via NET/AWS Libfabric/7/GDRDMA
+nid001052:1734311:1734436 [0] NCCL INFO Channel 04/0 : 0[0] -> 4[0] [receive] via NET/AWS Libfabric/7/GDRDMA
+nid001052:1734316:1734437 [3] NCCL INFO Channel 01/0 : 3[3] -> 7[3] [receive] via NET/AWS Libfabric/1/GDRDMA
+nid001052:1734311:1734436 [0] NCCL INFO Channel 00/0 : 4[0] -> 0[0] [send] via NET/AWS Libfabric/7/GDRDMA
+nid001052:1734316:1734437 [3] NCCL INFO Channel 05/0 : 3[3] -> 7[3] [receive] via NET/AWS Libfabric/1/GDRDMA
+nid001052:1734311:1734436 [0] NCCL INFO Channel 04/0 : 4[0] -> 0[0] [send] via NET/AWS Libfabric/7/GDRDMA
+nid001052:1734316:1734437 [3] NCCL INFO Channel 01/0 : 7[3] -> 3[3] [send] via NET/AWS Libfabric/1/GDRDMA
+nid001052:1734316:1734437 [3] NCCL INFO Channel 05/0 : 7[3] -> 3[3] [send] via NET/AWS Libfabric/1/GDRDMA
+nid001052:1734316:1734437 [3] NCCL INFO Channel 03/0 : 7[3] -> 4[0] via P2P/CUMEM/read
+nid001049:626828:626963 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+nid001052:1734316:1734437 [3] NCCL INFO Channel 07/0 : 7[3] -> 4[0] via P2P/CUMEM/read
+nid001049:626828:626963 [3] NCCL INFO Channel 03/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+nid001049:626828:626963 [3] NCCL INFO Channel 04/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+nid001052:1734316:1734437 [3] NCCL INFO Channel 01/0 : 7[3] -> 5[1] via P2P/CUMEM/read
+nid001049:626828:626963 [3] NCCL INFO Channel 07/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+nid001052:1734316:1734437 [3] NCCL INFO Channel 02/0 : 7[3] -> 5[1] via P2P/CUMEM/read
+nid001052:1734316:1734437 [3] NCCL INFO Channel 05/0 : 7[3] -> 5[1] via P2P/CUMEM/read
+nid001049:626828:626963 [3] NCCL INFO Channel 01/0 : 3[3] -> 1[1] via P2P/CUMEM/read
+nid001049:626828:626963 [3] NCCL INFO Channel 05/0 : 3[3] -> 1[1] via P2P/CUMEM/read
+nid001052:1734316:1734437 [3] NCCL INFO Channel 06/0 : 7[3] -> 5[1] via P2P/CUMEM/read
+nid001052:1734314:1734434 [2] NCCL INFO Channel 00/0 : 6[2] -> 5[1] via P2P/CUMEM/read
+nid001052:1734314:1734434 [2] NCCL INFO Channel 03/0 : 6[2] -> 5[1] via P2P/CUMEM/read
+nid001049:626826:626964 [2] NCCL INFO Channel 03/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+nid001052:1734312:1734435 [1] NCCL INFO Channel 03/0 : 1[1] -> 5[1] [receive] via NET/AWS Libfabric/5/GDRDMA
+nid001052:1734314:1734434 [2] NCCL INFO Channel 04/0 : 6[2] -> 5[1] via P2P/CUMEM/read
+nid001052:1734312:1734435 [1] NCCL INFO Channel 07/0 : 1[1] -> 5[1] [receive] via NET/AWS Libfabric/5/GDRDMA
+nid001052:1734314:1734434 [2] NCCL INFO Channel 07/0 : 6[2] -> 5[1] via P2P/CUMEM/read
+nid001052:1734312:1734435 [1] NCCL INFO Channel 03/0 : 5[1] -> 1[1] [send] via NET/AWS Libfabric/5/GDRDMA
+nid001052:1734312:1734435 [1] NCCL INFO Channel 07/0 : 5[1] -> 1[1] [send] via NET/AWS Libfabric/5/GDRDMA
+nid001049:626826:626964 [2] NCCL INFO Channel 07/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+nid001052:1734316:1734437 [3] NCCL INFO Channel 00/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+nid001052:1734316:1734437 [3] NCCL INFO Channel 03/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+nid001052:1734316:1734437 [3] NCCL INFO Channel 04/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+nid001049:626828:626963 [3] NCCL INFO Channel 03/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+nid001052:1734316:1734437 [3] NCCL INFO Channel 07/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+nid001052:1734312:1734435 [1] NCCL INFO Channel 01/0 : 5[1] -> 4[0] via P2P/CUMEM/read
+nid001049:626828:626963 [3] NCCL INFO Channel 07/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+nid001049:626824:626962 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+nid001049:626824:626962 [1] NCCL INFO Channel 05/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+nid001052:1734312:1734435 [1] NCCL INFO Channel 02/0 : 5[1] -> 4[0] via P2P/CUMEM/read
+nid001052:1734312:1734435 [1] NCCL INFO Channel 05/0 : 5[1] -> 4[0] via P2P/CUMEM/read
+nid001052:1734312:1734435 [1] NCCL INFO Channel 06/0 : 5[1] -> 4[0] via P2P/CUMEM/read
+nid001049:626823:626961 [0] NCCL INFO Connected all trees
+nid001052:1734311:1734436 [0] NCCL INFO Connected all trees
+nid001049:626828:626963 [3] NCCL INFO Connected all trees
+nid001049:626824:626962 [1] NCCL INFO Connected all trees
+nid001052:1734316:1734437 [3] NCCL INFO Connected all trees
+nid001049:626826:626964 [2] NCCL INFO Connected all trees
+nid001052:1734312:1734435 [1] NCCL INFO Connected all trees
+nid001052:1734314:1734434 [2] NCCL INFO Connected all trees
+           8             2     float     sum      -1    23.88    0.00    0.00      0    19.22    0.00    0.00      0
+          16             4     float     sum      -1    18.91    0.00    0.00      0    18.78    0.00    0.00      0
+          32             8     float     sum      -1    19.16    0.00    0.00      0    18.90    0.00    0.00      0
+          64            16     float     sum      -1    20.01    0.00    0.01      0    20.24    0.00    0.01      0
+         128            32     float     sum      -1    20.58    0.01    0.01      0    20.11    0.01    0.01      0
+         256            64     float     sum      -1    20.40    0.01    0.02      0    20.04    0.01    0.02      0
+         512           128     float     sum      -1    20.66    0.02    0.04      0    20.57    0.02    0.04      0
+        1024           256     float     sum      -1    133.7    0.01    0.01      0    21.12    0.05    0.08      0
+        2048           512     float     sum      -1    27.85    0.07    0.13      0    22.38    0.09    0.16      0
+        4096          1024     float     sum      -1    33.16    0.12    0.22      0    23.79    0.17    0.30      0
+        8192          2048     float     sum      -1    37.39    0.22    0.38      0    27.62    0.30    0.52      0
+       16384          4096     float     sum      -1    42.07    0.39    0.68      0    28.74    0.57    1.00      0
+       32768          8192     float     sum      -1    44.26    0.74    1.30      0    29.75    1.10    1.93      0
+       65536         16384     float     sum      -1    38.74    1.69    2.96      0    31.45    2.08    3.65      0
+      131072         32768     float     sum      -1    56.86    2.31    4.03      0    43.22    3.03    5.31      0
+      262144         65536     float     sum      -1    83.17    3.15    5.52      0    95.22    2.75    4.82      0
+      524288        131072     float     sum      -1    112.0    4.68    8.19      0    217.2    2.41    4.22      0
+     1048576        262144     float     sum      -1    175.2    5.98   10.47      0    173.4    6.05   10.58      0
+     2097152        524288     float     sum      -1    266.3    7.88   13.78      0    252.7    8.30   14.52      0
+     4194304       1048576     float     sum      -1    396.3   10.58   18.52      0    404.1   10.38   18.16      0
+     8388608       2097152     float     sum      -1    465.4   18.02   31.54      0    456.1   18.39   32.18      0
+    16777216       4194304     float     sum      -1    940.5   17.84   31.22      0    939.8   17.85   31.24      0
+    33554432       8388608     float     sum      -1   1976.8   16.97   29.70      0   1887.2   17.78   31.11      0
+    67108864      16777216     float     sum      -1   3771.5   17.79   31.14      0   3772.9   17.79   31.13      0
+   134217728      33554432     float     sum      -1   7505.5   17.88   31.29      0   7520.5   17.85   31.23      0
+   268435456      67108864     float     sum      -1    15403   17.43   30.50      0    15363   17.47   30.58      0
+   536870912     134217728     float     sum      -1    30681   17.50   30.62      0    30662   17.51   30.64      0
+  1073741824     268435456     float     sum      -1    61785   17.38   30.41      0    61625   17.42   30.49      0
+  2147483648     536870912     float     sum      -1   123344   17.41   30.47      0   123295   17.42   30.48      0
+  4294967296    1073741824     float     sum      -1   246607   17.42   30.48      0   247537   17.35   30.36      0
+nid001049:626826:626826 [2] NCCL INFO comm 0x119e520 rank 2 nranks 8 cudaDev 2 busId 82000 - Destroy COMPLETE
+nid001049:626823:626823 [0] NCCL INFO comm 0x119df70 rank 0 nranks 8 cudaDev 0 busId 3000 - Destroy COMPLETE
+nid001049:626824:626824 [1] NCCL INFO comm 0x119e9f0 rank 1 nranks 8 cudaDev 1 busId 41000 - Destroy COMPLETE
+# Out of bounds values : 0 OK
+# Avg bus bandwidth    : 12.4743 
+#
+nid001049:626828:626828 [3] NCCL INFO comm 0x119e610 rank 3 nranks 8 cudaDev 3 busId c1000 - Destroy COMPLETE
+nid001052:1734311:1734311 [0] NCCL INFO comm 0x11a00b0 rank 4 nranks 8 cudaDev 0 busId 3000 - Destroy COMPLETE
+nid001052:1734314:1734314 [2] NCCL INFO comm 0x119e5f0 rank 6 nranks 8 cudaDev 2 busId 82000 - Destroy COMPLETE
+nid001052:1734316:1734316 [3] NCCL INFO comm 0x119e600 rank 7 nranks 8 cudaDev 3 busId c1000 - Destroy COMPLETE
+nid001052:1734312:1734312 [1] NCCL INFO comm 0x119e490 rank 5 nranks 8 cudaDev 1 busId 41000 - Destroy COMPLETE
+
