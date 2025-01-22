@@ -6,7 +6,7 @@
 #SBATCH --ntasks-per-node=4
 #SBATCH --gpus-per-node=4
 #SBATCH --time=10
-#SBATCH --image=nvcr.io/nvidia/pytorch:24.10-py3
+#SBATCH --image=nvcr.io/nvidia/pytorch:24.11-py3
 #SBATCH -o slurm-test-shifter-%j.out
 
 echo ========== BUILDING NCCL TESTS ==========
